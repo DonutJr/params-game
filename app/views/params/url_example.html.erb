@@ -1,0 +1,12 @@
+
+
+<h1>Your guess is: <%= @number %></h1>
+<% if @number == 36 %>
+<h2>Your guess is right!
+<% end %>
+<% if @number < 36 %>
+Guess higher!
+<% end %>
+<% if @number > 36 %>
+Guess lower!
+<% end %></h2>

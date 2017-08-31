@@ -1,0 +1,19 @@
+
+
+
+
+
+<h1>Your guess is: <%= @num %></h1>
+<% if @num == 36 %>
+<h2>Your guess is right!
+<% end %>
+<% if @num < 36 %>
+Guess higher!
+<% end %>
+<% if @num > 36 %>
+Guess lower!
+<% end %></h2>
+
+<br>
+
+<a href="http://localhost:3000/form_show_example">Try again </a>

@@ -1,0 +1,29 @@
+<h1><%= @message %></h1>
+
+
+<% if @message.first =='a' %>
+    <h2>hello</h2>
+<% end %>
+
+
+
+<h1>Your name is: </h1>
+<% if @message %> 
+<h2><%= @message.upcase %></h2> 
+  <% if @message.first == 'a' %>
+  <h2>Hey, your name starts with the first letter of the alphabet!</h2>
+  <% end %>
+<% end %>
+
+
+<h1>Your guess is: <%= @number %></h1>
+<% if @number == 36 %>
+<h2>Your guess is right!
+<% end %>
+<% if @number < 36 %>
+Guess higher!
+<% end %>
+<% if @number > 36 %>
+Guess lower!
+<% end %></h2>
+
